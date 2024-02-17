@@ -1,12 +1,13 @@
-extern crate prettytable;
 extern crate ansi_term;
 use std::io::{self, Write};
 mod add_invoice;
 mod view_invoices;
+mod add_payment;
 use add_invoice::add_invoice;
 use view_invoices::view_invoices;
+use add_payment::handle_add_payment;
 
-fn main() {
+fn main() -> io::Result<()>{
     loop {
         println!("1. Add invoice");
         println!("2. Add payment");
@@ -27,16 +28,13 @@ fn main() {
 
         match choice {
             1 => add_invoice(),
-            2 => add_payment(),
+            2 => handle_add_payment()?,
             3 => view_invoices(),
-            4 => break,
+            4 => return Ok(()),
             _ => println!("Invalid choice, please try again"),
         }
-    }
 }
 
-fn add_payment() {
-    println!("Add payment function called");
 }
 
 

@@ -1,8 +1,17 @@
 {
-    "date_issued": "2024-01-03",
-    "invoice_amount": 2000.0,
-    "invoice_currency": "USD",
-    "invoice_id": "1",
-    "invoice_paid": false,
-    "payments": []
+  "date_issued": "2024-01-03",
+  "invoice_amount": 2000.0,
+  "invoice_currency": "USD",
+  "invoice_id": "1",
+  "invoice_paid": true,
+  "payments": [
+    {
+      "date_payment": "2024-01-06",
+      "payment_amount": 100.0
+    },
+    {
+      "date_payment": "2024-02-08",
+      "payment_amount": 1900.0
+    }
+  ]
 }
