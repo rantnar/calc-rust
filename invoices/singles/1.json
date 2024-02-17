@@ -1,0 +1,8 @@
+{
+    "date_issued": "2024-01-03",
+    "invoice_amount": 2000.0,
+    "invoice_currency": "USD",
+    "invoice_id": "1",
+    "invoice_paid": false,
+    "payments": []
+}
